@@ -31,37 +31,52 @@
                         disabled="disabled" />
 
                     <div class="row">
-                        <button id="clear" type="button"
-                            class="btn btn-dark btn-lg font-weight-light twoSpaces">C</button>
-                        <button id="division" type="button" class="btn btn-dark btn-lg font-weight-light">/</button>
-                        <button id="multiplication" type="button"
+                        <button onclick="calcular('action','c')" type="button"
+                            class="btn btn-dark btn-lg font-weight-light two-spaces">C</button>
+                        <button onclick="calcular('action','/')" type="button"
+                            class="btn btn-dark btn-lg font-weight-light">/</button>
+                        <button onclick="calcular('action','*')" type="button"
                             class="btn btn-dark btn-lg font-weight-light">x</button>
                     </div>
 
                     <div class="row">
-                        <button type="button" class="btn btn-dark btn-lg font-weight-light">7</button>
-                        <button type="button" class="btn btn-dark btn-lg font-weight-light">8</button>
-                        <button type="button" class="btn btn-dark btn-lg font-weight-light">9</button>
-                        <button id="subtraction" type="button" class="btn btn-dark btn-lg font-weight-light">-</button>
+                        <button onclick="calcular('number','7')" type="button"
+                            class="btn btn-dark btn-lg font-weight-light">7</button>
+                        <button onclick="calcular('number','8')" type="button"
+                            class="btn btn-dark btn-lg font-weight-light">8</button>
+                        <button onclick="calcular('number','9')" type="button"
+                            class="btn btn-dark btn-lg font-weight-light">9</button>
+                        <button onclick="calcular('action','-')" type="button"
+                            class="btn btn-dark btn-lg font-weight-light">-</button>
                     </div>
 
                     <div class="row">
-                        <button type="button" class="btn btn-dark btn-lg font-weight-light">4</button>
-                        <button type="button" class="btn btn-dark btn-lg font-weight-light">5</button>
-                        <button type="button" class="btn btn-dark btn-lg font-weight-light">6</button>
-                        <button id="sum" type="button" class="btn btn-dark btn-lg font-weight-light">+</button>
+                        <button onclick="calcular('number','4')" type="button"
+                            class="btn btn-dark btn-lg font-weight-light">4</button>
+                        <button onclick="calcular('number','5')" type="button"
+                            class="btn btn-dark btn-lg font-weight-light">5</button>
+                        <button onclick="calcular('number','6')" type="button"
+                            class="btn btn-dark btn-lg font-weight-light">6</button>
+                        <button onclick="calcular('action','+')" id="sum" type="button"
+                            class="btn btn-dark btn-lg font-weight-light">+</button>
                     </div>
 
                     <div class="row">
-                        <button type="button" class="btn btn-dark btn-lg font-weight-light">1</button>
-                        <button type="button" class="btn btn-dark btn-lg font-weight-light">2</button>
-                        <button type="button" class="btn btn-dark btn-lg font-weight-light">3</button>
-                        <button id="result" type="button" class="btn btn-dark btn-lg enter">=</button>
+                        <button onclick="calcular('number','1')" type="button"
+                            class="btn btn-dark btn-lg font-weight-light">1</button>
+                        <button onclick="calcular('number','2')" type="button"
+                            class="btn btn-dark btn-lg font-weight-light">2</button>
+                        <button onclick="calcular('number','3')" type="button"
+                            class="btn btn-dark btn-lg font-weight-light">3</button>
+                        <button onclick="calcular('action','=')" id="result" type="button"
+                            class="btn btn-dark btn-lg enter">=</button>
                     </div>
 
                     <div class="row zero-point">
-                        <button type="button" class="btn btn-dark btn-lg font-weight-light twoSpaces">0</button>
-                        <button id="dot" type="button" class="btn btn-dark btn-lg font-weight-light">.</button>
+                        <button onclick="calcular('number','0')" type="button"
+                            class="btn btn-dark btn-lg font-weight-light two-spaces">0</button>
+                        <button onclick="calcular('action','.')" id="dot" type="button"
+                            class="btn btn-dark btn-lg font-weight-light">.</button>
                     </div>
 
                 </div>
